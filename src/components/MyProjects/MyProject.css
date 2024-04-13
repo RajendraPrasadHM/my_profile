@@ -1,0 +1,183 @@
+.header {
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  top: 0;
+}
+
+.home-link {
+  position: relative;
+  display: flex;
+  text-decoration: none;
+  text-shadow: 10px;
+  color: black;
+}
+.home-link:hover {
+  color: var(--orange);
+}
+.home-link > img {
+  width: 39px;
+}
+.home-text {
+  margin-top: 9px;
+  margin-left: 6px;
+}
+.right-project-name {
+  margin-top: 1.5rem;
+  margin-right: 31rem;
+  font-weight: bold;
+  font-size: 2rem;
+  text-decoration: underline;
+  transform: translate(50%, -50%);
+  text-transform: uppercase;
+  font-family: verdana;
+  font-size: 32px;
+  font-weight: 600;
+  color: #1f2e31;
+  text-shadow: 1px 1px 1px #2ba8d2, 1px 2px 1px #919191, 1px 3px 1px #62e291,
+    1px 4px 1px #919191, 1px 5px 1px #919191, 1px 6px 1px #919191,
+    1px 7px 1px #919191, 1px 7px 1px #919191, 1px 9px 1px #919191,
+    1px 10px 1px #919191, 1px 18px 6px rgb(42 164 159 / 69%),
+    1px 22px 10px rgba(16, 16, 16, 0.2), 1px 25px 35px rgba(16, 16, 16, 0.2),
+    1px 30px 60px rgba(16, 16, 16, 0.4);
+}
+.home-link > img ~ .home-text:hover {
+  color: var(--orange);
+}
+
+.project-details {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  top: 0;
+}
+.prodject-description {
+  text-align: justify;
+  margin-right: 3rem;
+}
+.img-section {
+  float: left;
+  width: 22rem;
+  height: 13rem;
+  border-radius: 20px;
+}
+
+.side-headings {
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-variant: small-caps;
+  text-decoration: underline;
+}
+.prodject-description > p {
+  text-indent: 30px;
+}
+
+/* Non-essential */
+
+li:hover {
+  background-color: rgb(41 239 233 / 28%);
+  border-radius: 20px;
+  cursor: pointer;
+}
+li:before:hover {
+  background-color: rgba(256, 256, 256, 0.1);
+}
+li:not(:first-of-type)::before {
+  padding-top: 12px;
+}
+
+/* END */
+.project-skills {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  margin-top: 3rem;
+}
+
+.project-skills > .r-skills {
+  margin-top: 4rem;
+  margin-right: 4rem;
+}
+.img-section {
+  margin-top: 2rem;
+  width: 23rem;
+  height: 14rem;
+  border: 7px;
+  border-radius: 24px;
+}
+.skill-list {
+  height: 1.5rem;
+  width: 8.5rem;
+  text-align: center;
+  margin-top: 7px;
+  margin-right: 27px;
+  background-image: url("../../assests/img/right-arrow.png");
+  background-repeat: no-repeat;
+  background-position: inherit;
+  background-size: 20px;
+  list-style: none;
+  font-weight: 600;
+}
+
+.role-responsibilities,
+.code-quality {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  margin-top: 3rem;
+}
+
+.roles-list {
+  list-style: circle;
+  text-align: justify;
+  margin-top: 7px;
+  margin-right: 45px;
+}
+
+.img-section {
+  margin-top: 2rem;
+  width: 23rem;
+  height: 14rem;
+  border: 7px;
+  border-radius: 24px;
+  align-items: center;
+}
+
+.r-code-quality {
+  text-align: center;
+  margin-top: 50px;
+  margin-left: 20px;
+  list-style: none;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 480px) {
+  .project-details,
+  .project-skills,
+  .role-responsibilities,
+  .code-quality {
+    flex-direction: column;
+  }
+  .project-image > img {
+    width: 16rem;
+    height: 13rem;
+    padding-left: 27px;
+  }
+  .project-skills > .r-skills {
+    margin-top: 0rem;
+    margin-right: 2rem;
+  }
+  .skill-list {
+    width: 7.5rem;
+    background-size: 14px;
+  }
+  /* .project-skills > .l-skill-icons > img {
+    width: 18rem;
+    height: 12rem;
+  } */
+  .img-section {
+    width: 18rem;
+    height: 12rem;
+  }
+}

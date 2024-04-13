@@ -1,0 +1,11 @@
+.contact-form {
+  padding: 0 3rem 0 3rem;
+  display: flex;
+  height: 20vh;
+  margin-top: 4rem;
+  /* scroll */
+  padding-top: 3rem;
+}
+
+@media screen and (max-width: 480px) {
+}
